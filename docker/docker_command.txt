@@ -2,3 +2,26 @@ Executing the Docker Command Without Sudo(Optional)
 
 add your username to the docker group
 $ sudo usermod -aG docker $(whoami)
+
+To check whether you can access and download images from Docker Hub, type:
+$ docker run hello-world
+
+To search for images available on Docker Hub. For example, to search for the Ubuntu image, type:
+$ docker search ubuntu
+
+To download image to your computer using the pull subcommand, like so
+$ docker pull ubuntu
+
+To see the images that have been downloaded to your computer, type:
+$ docker images
+
+To Run a container
+$ docker run ubuntu
+$ docker run --name mysql -e MYSQL_ROOT_PASSWORD=my-secret-pw -d mysql:latest
+
+Listing Docker Containers
+$ docker ps
+$ docker ps -a
+
+Stopping a running or active container is as simple as typing:
+$ docker stop container-id
