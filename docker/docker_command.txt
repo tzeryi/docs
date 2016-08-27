@@ -1,0 +1,4 @@
+Executing the Docker Command Without Sudo(Optional)
+
+add your username to the docker group
+$ sudo usermod -aG docker $(whoami)
